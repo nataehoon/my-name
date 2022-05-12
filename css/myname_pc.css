@@ -1,0 +1,682 @@
+@font-face {
+  font-family: "pixel";
+  src: url("./fonts/Pixel Sans Serif Condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tardust";
+  src: url("./fonts/PFStardust.ttf") format("truetype");
+}
+
+html {
+  font-size: 4vh;
+}
+
+html body {
+  font-size: 1vh;
+  font-family: 'tardust';
+}
+
+.mainWrap {
+  background-color: #4eadf5;
+}
+
+.mainWrap:nth-child(3) {
+  padding-top: min(0.5rem,20px);
+  padding-bottom: min(1rem,40px);
+}
+
+.mainWrap .main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mainWrap .main .mainTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.mainWrap .main .mainTop .first {
+  position: relative;
+  height: 20vh;
+}
+
+.mainWrap .main .mainTop .first .logo {
+  position: absolute;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/logo md 1.gif");
+  width: calc(100% / 21 * 1.5);
+  height: min(3rem,120px);
+  top: min(1.5rem,60px);
+  left: 4%;
+  z-index: 5;
+}
+
+.mainWrap .main .mainTop .first .logo:hover {
+  background-image: url("../images/main1/logo md 2.gif");
+}
+
+.mainWrap .main .mainTop .second {
+  position: relative;
+  height: 40vh;
+}
+
+.mainWrap .main .mainTop .second .cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+.mainWrap .main .mainTop .second .cloud .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mainWrap .main .mainTop .second .cloud .image.i1 {
+  background-image: url("../images/main1/cloud1.png");
+}
+
+.mainWrap .main .mainTop .second .cloud .image.i2 {
+  background-image: url("../images/main1/cloud2.png");
+}
+
+.mainWrap .main .mainTop .second .cloud .image.i1 {
+  width: calc(100% / 21 * 7);
+  height: min(8rem,320px);
+}
+
+.mainWrap .main .mainTop .second .cloud .image.i2 {
+  width: calc(100% / 21 * 6);
+  height: min(4rem,160px);
+}
+
+.mainWrap .main .mainTop .second .title {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  position: absolute;
+  background-image: url("../images/main1/main.png");
+  height: min(11rem,440px);
+  width: calc(100% / 21 * 12);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: min(-1.5rem,-60px);
+}
+
+.mainWrap .main .mainTop .second .title h2 {
+  font-size: min(7em,70px);
+  color: #fff;
+  font-family: 'pixel';
+  text-transform: capitalize;
+  line-height: min(11rem,440px);
+  text-align: center;
+  margin-right: 2%;
+}
+
+.mainWrap .main .mainTop .second .title .fly {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../images/main1/flymd.png");
+  width: calc(100% / 12 * 2.5);
+  height: min(4rem,160px);
+  right: 5%;
+  top: min(-1.5rem,-60px);
+}
+
+.mainWrap .main .mainBtm {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  position: absolute;
+  background-image: url("../images/bg/bgbtm.png");
+  width: 100%;
+  height: min(7rem,280px);
+  background-color: green;
+  bottom: 0;
+}
+
+.mainWrap .main .mainBtm .flower {
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: min(-3rem,-120px);
+  width: 75%;
+  height: min(6rem,240px);
+}
+
+.mainWrap .main .mainBtm .flower .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/flowermd.png");
+  width: calc(100% / 21 * 2);
+  height: min(3rem,120px);
+  position: absolute;
+  z-index: 1;
+}
+
+.mainWrap .main .mainBtm .flower .image.i1 {
+  left: 20%;
+  bottom: min(2rem,80px);
+}
+
+.mainWrap .main .mainBtm .flower .image.i2 {
+  right: 40%;
+  bottom: 0;
+}
+
+.mainWrap .main .mainBtm .flower .image.i3 {
+  bottom: min(1.5rem,60px);
+  right: 0;
+}
+
+.mainWrap .main .mainBtm .me {
+  position: relative;
+  position: absolute;
+  width: 25%;
+  right: 0;
+  top: min(-3.5rem,-140px);
+}
+
+.mainWrap .main .mainBtm .me .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  height: min(4.5rem,180px);
+  width: calc(100% / 5 * 1.8);
+  z-index: 1;
+  top: 0;
+}
+
+.mainWrap .main .mainBtm .me .image.i1 {
+  background-image: url("../images/main1/me1.png");
+}
+
+.mainWrap .main .mainBtm .me .image.i2 {
+  background-image: url("../images/main1/me2.png");
+}
+
+.mainWrap .main .mainBtm .me .image.i2 {
+  left: 25%;
+}
+
+.mainWrap .main.main02 .first {
+  position: relative;
+}
+
+.mainWrap .main.main02 .first .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% / 21 * 3);
+  margin-left: auto;
+  position: absolute;
+  right: 4%;
+  top: min(1rem,40px);
+}
+
+.mainWrap .main.main02 .first .heart .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/heart.png");
+  height: min(3rem,120px);
+  width: calc(100% / 3 - 10px);
+}
+
+.mainWrap .main.main02 .second .cloud .image.i1 {
+  margin-left: 10%;
+  margin-top: min(-2rem,-80px);
+  background-image: url("../images/main1/cloud2.png");
+}
+
+.mainWrap .main.main02 .second .cloud .image.i2 {
+  margin-right: 5%;
+  margin-top: min(3rem,120px);
+  background-image: url("../images/main1/cloud1.png");
+  width: calc(100% / 21 * 6);
+  height: min(8rem,320px);
+}
+
+.mainWrap .main.main02 .second .box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: min(8rem,320px);
+}
+
+.mainWrap .main.main02 .second .box .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/box.png");
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: min(3rem,120px);
+}
+
+.mainWrap .main.main02 .second .box .image.i1 {
+  bottom: min(-1rem,-40px);
+  left: 10%;
+}
+
+.mainWrap .main.main02 .second .box .image.i2 {
+  top: min(2rem,80px);
+  right: 0;
+}
+
+.mainWrap .main.main02 .mainBtm .flower .image.i2 {
+  right: 30%;
+}
+
+.mainWrap .main.main02 .mainBtm .flower .image.i3 {
+  right: -20%;
+}
+
+.mainWrap .main.main02 .mainBtm .me {
+  position: absolute;
+  left: 30%;
+}
+
+.mainWrap .main.main02 .mainBtm .me .image.i2 {
+  position: relative;
+}
+
+.mainWrap .main.main02 .mainBtm .me .image.i2 .water {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/water.png");
+  position: absolute;
+  width: 30%;
+  height: min(0.75rem,30px);
+  right: 25%;
+  top: 1.5rem;
+}
+
+.mainWrap .main.main03 {
+  position: relative;
+  background-color: #d9b561;
+  width: 94%;
+  margin: 0 auto;
+  height: 77vh;
+}
+
+.mainWrap .main.main03 .menu {
+  padding: 2%;
+  padding-top: min(1rem,40px);
+  padding-bottom: min(1rem,40px);
+  background-color: #ffd36e;
+  width: 99%;
+  position: absolute;
+  top: -8px;
+}
+
+.mainWrap .main.main03 .menu .outli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 6px dashed #dca424;
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft {
+  width: calc(100% / 20 * 6);
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .char {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% / 6 * 3.5);
+  height: min(8.5rem,340px);
+  outline: 6px solid #dca424;
+  margin: 0 auto;
+  margin-top: min(1rem,40px);
+  background-image: url("../images/main1/bgcbig.gif");
+  padding-top: 50px;
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .char .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/main_me.gif");
+  width: 70%;
+  height: min(6rem,240px);
+  margin: 0 auto;
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info {
+  margin-top: min(1rem,40px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .top h4 {
+  text-align: center;
+  font-size: min(2.8em,28px);
+  line-height: min(1rem,40px);
+  color: #fff;
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .top h4:nth-child(2) {
+  font-size: min(2em,20px);
+  font-family: pixel;
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .btm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: min(1rem,40px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .btm .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  width: calc(50% - 10px);
+  height: min(2rem,80px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .btm .image.i1 {
+  background-image: url("../images/main1/bottom1.gif");
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .btm .image.i2 {
+  background-image: url("../images/main1/bottom2.gif");
+}
+
+.mainWrap .main.main03 .menu .outli .mnLeft .info .btm .image.i1::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/bottom.gif");
+  position: absolute;
+  content: '';
+  display: block;
+  width: 115%;
+  height: min(2.5rem,100px);
+  top: min(-0.25rem,-10px);
+  left: -5%;
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight {
+  width: calc(100% / 20 * 14);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .riTop {
+  padding-right: 5%;
+  padding-top: min(1rem,40px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .riTop .txtGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: pixel;
+  color: #fff;
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .riTop .txtGroup h3 {
+  font-size: min(2.5rem,25px);
+  line-height: min(2rem,80px);
+  text-transform: uppercase;
+  width: calc(100% / 14 * 3);
+  height: min(2rem,80px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .riTop .txtGroup .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/perbar.png");
+  width: calc(100% / 14 * 9);
+  height: min(1.5rem,60px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .riTop .txtGroup h5 {
+  font-size: min(2.8em,28px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% / 20 * 6.5);
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .btn h4 {
+  font-size: min(2em,20px);
+  color: #fff;
+  line-height: min(2rem,80px);
+}
+
+.mainWrap .main.main03 .menu .outli .mnRight .btn .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/main1/down.gif");
+  width: calc(100% / 6.5 * 1.5);
+  height: min(2rem,80px);
+  margin-bottom: min(0.5rem,20px);
+  position: relative;
+  z-index: 6;
+  cursor: pointer;
+}
+
+.mainWrap .main.main04 {
+  position: relative;
+  background-color: #d9b561;
+  width: 94%;
+  margin: 0 auto;
+  height: 77vh;
+}
+
+.mainWrap .main.main04 .menu {
+  padding: 2%;
+  padding-top: min(1rem,40px);
+  padding-bottom: min(1rem,40px);
+  background-color: #ffd36e;
+  width: 99%;
+  position: absolute;
+  top: -8px;
+}
+
+.mainWrap .main.main04 .menu .outline {
+  border: 6px dashed #dca424;
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .left {
+  width: calc(100% / 20 * 6);
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .left .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% / 6 * 3.5);
+  height: min(8.5rem,340px);
+  outline: 6px solid #dca424;
+  margin: 0 auto;
+  margin-top: min(1rem,40px);
+  background-image: url("../images/main1/bgcbig.gif");
+  padding-top: 50px;
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .right {
+  margin-top: min(1rem,40px);
+  width: calc(100% / 20 * 14);
+  color: #fff;
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .right h3 {
+  font-size: min(3.5em,35px);
+  font-family: pixel;
+  text-transform: capitalize;
+  width: calc(100% / 14 * 3);
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .right .infofir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainWrap .main.main04 .menu .outline .menuTop .right .infofir .infLeft {
+  width: calc(100% / 14 * 11);
+}
+
+.game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+}
+
+.game .top {
+  height: min(1rem,40ox);
+  width: 100%;
+  background-color: #8acbbb;
+}
+
+.game .left {
+  background-color: #8acbbb;
+  width: 40px;
+  height: 100vh;
+}
+
+.game .right {
+  background-color: #8acbbb;
+  width: 40px;
+  height: 100vh;
+}
+
+.game .bottom {
+  height: min(16rem,640px);
+}
+
+.game .bottom .btn {
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.game .bottom .btn .btnLeft {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: calc(100% / 21 * 1.5);
+  height: min(3rem,120px);
+  background-image: url("../images/game/gamebutton.png");
+  position: absolute;
+  left: 20%;
+  bottom: -3.5rem;
+}
+
+.game .bottom .btn .btnRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  position: absolute;
+  width: calc(100% / 21 * 4);
+  right: 20%;
+  bottom: min(-3.8rem,152px);
+  height: min(3.5rem,140px);
+}
+
+.game .bottom .btn .btnRight .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+}
+
+.game .bottom .btn .btnRight .image.i1 {
+  background-image: url("../images/game/gamebutton1.png");
+}
+
+.game .bottom .btn .btnRight .image.i2 {
+  background-image: url("../images/game/gamebutton2.png");
+}
+
+.game .bottom .btn .btnRight .image.i3 {
+  background-image: url("../images/game/gamebutton3.png");
+}
+
+.game .bottom .btn .btnRight .image.i1 {
+  width: calc(100% / 4 * 1.3);
+  height: min(3rem,120px);
+}
+
+.game .bottom .btn .btnRight .image.i2 {
+  width: calc(100% / 4 * 0.8);
+  height: min(2rem,80px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.game .bottom .btn .btnRight .image.i3 {
+  width: calc(100% / 4 * 0.8);
+  height: min(2rem,80px);
+  right: 15%;
+}
+/*# sourceMappingURL=myname_pc.css.map */

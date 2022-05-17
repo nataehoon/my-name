@@ -43,6 +43,7 @@ html{
         font-family: 'tardust';
         position: relative;
         overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -166,6 +167,7 @@ html{
             top: 0;
             left: 0;
             z-index: 4;
+            opacity: 0;
         }
         .mainleft{
             position: absolute;
@@ -175,6 +177,7 @@ html{
             left: 0;
             z-index: 4;
             top: 0;
+            opacity: 0;
         }
         .mainright{
             position: absolute;
@@ -184,6 +187,7 @@ html{
             right: 0;
             z-index: 4;
             top: 0;
+            opacity: 0;
         }
         .mainbottom{
             position: relative;
@@ -193,6 +197,7 @@ html{
             height: #{'min(4.5rem,180px)'};
             bottom: 0;
             width: 100%;
+            opacity: 0;
             .btnLeft{
                 @include ptbtn;
                 width: calc(100% / 21 * 1.5);
@@ -395,16 +400,20 @@ html{
                     width: calc(100% / 5 * 1.8);
                     z-index: 1;
                     top: 0;
+                    animation-name: 'mainme1';
+                    animation-duration: 1.8s;
                     &.i1.on{
-                        animation-name: 'mainme1';
-                        animation-duration: 2s;
+                        animation-delay: 1.8s;                 
+                        animation-iteration-count: infinite;
                     }
                     &.i2{
                         left: 25%;
-                        &.onn{
-                            animation-name: 'mainme1';
-                            animation-duration: 2s;
-                            animation-delay: 2s;                 
+                        animation-name: 'mainme1';
+                        animation-duration: 1.8s;
+                        animation-delay: 2s;                 
+                        &.i2.onn{
+                            animation-delay: 4.8s;                 
+                            animation-iteration-count: infinite;
                         }
                     }
                 }
@@ -513,6 +522,7 @@ html{
                                     top: 1.5rem;
                                     animation-name: 'water';
                                     animation-duration: 2s;
+                                    animation-iteration-count: infinite;
                                 }
                             }
                         }
@@ -610,18 +620,23 @@ html{
                     .mnRight{
                         width: calc(100% / 20 * 14);
                         .riTop{
+                            position: relative;
                             padding-right: 5%;
                             padding-top: $lh2;
                             .txtGroup{
                                 @include flex;
                                 font-family: pixel;
                                 color: #fff;
+                                &:nth-child(1)~.txtGroup{
+                                    margin-top: $lh;
+                                }
                                 h3{
                                     font-size: #{'min(2.5rem,25px)'};
                                     line-height: $lh3;
                                     text-transform: uppercase;
                                     width: calc(100% / 14 * 3);
                                     height: $lh3;
+                                    overflow: hidden;
                                     &::selection{
                                         color: #fc0;
                                         background-color: #fff;
@@ -631,7 +646,7 @@ html{
                                         background-color: #fff;
                                     }
                                 }
-                                .image{
+                                >.image{
                                     @include ptbtn;
                                     background-image: url('../images/main1/perbar.png');
                                     width: calc(100% / 14 * 9);
@@ -669,6 +684,39 @@ html{
                                             color: #fc0;
                                             background-color: #fff;
                                         }
+                                    }
+                                }
+                            }
+                            .alert{
+                                @include flex;
+                                width: 45%;
+                                border: 8px solid #dca424;
+                                position: absolute;
+                                box-shadow: -4px 4px 1px #ca9b2f;
+                                background-color: #ffd36e;
+                                transform: translate(-100%,-100%);
+                                z-index: 2;
+                                top: auto;
+                                left: auto;
+                                opacity: 0;
+                                .image{
+                                    @include ptbtn;
+                                    width: calc(100% / 6 *1.5);
+                                    height: #{'min(2.5rem,100px)'};
+                                    margin-top: #{'min(0.5rem,20px)'};
+                                    background-image: url('../images/programming/btn01.gif');
+                                }
+                                .txt{
+                                    width: calc(100% / 6 * 4);
+                                    padding: 20px;
+                                    padding-top: $lh;
+                                    p{
+                                        height: #{'min(2.5rem,100px)'};
+                                        overflow: hidden;
+                                        width: 100%;
+                                        font-size: #{'min(1.8em,18px)'};
+                                        line-height: $lh;
+                                        font-weight: 700;
                                     }
                                 }
                             }
@@ -797,6 +845,7 @@ html{
                                         span{
                                             font-size: #{'min(3.5em,35px)'};
                                             line-height: $lh3;
+                                            display: none;
                                             &::selection{
                                                 color: #f597e7;
                                                 background-color: transparent;
@@ -807,6 +856,17 @@ html{
                                                 background-color: transparent;
                                                 text-shadow: 2px 2px 2px #fff;
                                             }
+                                        }
+                                        i{
+                                            display: inline-block;
+                                            width: 3.5px;
+                                            height: $lh2;
+                                            background-color: #fff;
+                                            animation-name: talk;
+                                            animation-duration: 1s;
+                                            animation-iteration-count: infinite;
+                                            margin-left: 5px;
+                                            vertical-align: sub;
                                         }
                                     }
                                 }
@@ -890,6 +950,8 @@ html{
                                 span{
                                     font-size: #{'min(3em,30px)'};
                                     line-height: $lh3;
+                                    height: $lh3;
+                                    overflow: hidden;
                                     &::selection{
                                         color: #f597e7;
                                         background-color: transparent;
@@ -902,10 +964,14 @@ html{
                                     }
                                 }
                             }
+                            &:nth-child(2){
+                                height: $lh3;
+                                overflow: hidden;
+                            }
                             &:nth-child(3){
                                 h3{
                                     position: absolute;
-                                    left: -5%;
+                                    left: -1%;
 
                                 }
                                 .image{
@@ -966,16 +1032,26 @@ html{
                 }
             }
             .gameLeft{
-                @include ptbtn();
+                @include ptbtn;
                 background-image: url('../images/main1/bmo.png');
+                height: #{'min(17rem,680px)'};
                 position: relative;
                 position: absolute;
                 z-index: 1;
                 left: 17%;
                 bottom: #{'min(6rem,240px)'};
                 width: calc(100% / 21 * 9);
-                height: #{'min(20rem,800px)'};
-                height: #{'min(17rem,680px)'};
+                .image{
+                    @include ptbg;
+                    margin-left: auto;
+                    margin-right: 22.8%;
+                    width: 41%;
+                    background-color: #000;
+                    height: #{'min(10rem,400px)'};
+                    margin-top: #{'min(1.6rem,64px)'};
+                    border-radius: 14%;
+                    background-image: url('../images/programming/loading.jpg');
+                }
             }
             .gameRight{
                 position: absolute;
@@ -984,6 +1060,7 @@ html{
                 width: calc(100% / 21 * 8);
                 z-index: 3;
                 .imageGroup{
+                    position: relative;
                     width: calc(100% / 8 * 5);
                     .image{
                         @include ptbtn;
@@ -995,8 +1072,32 @@ html{
                         width: calc(100% / 5 * 2.5);
                         height: #{'min(5.5rem,220px)'};
                         cursor: pointer;
+                        background-image: url(../images/page/page01.png);
                     }
-                    .btn{}
+                    .btn{
+                        box-shadow: -6px 2.5px 1px rgb(124, 124, 124);
+                        position: absolute;
+                        font-size: #{'min(1.5em,15px)'};
+                        text-transform: capitalize;
+                        line-height: $lh2;
+                        height: $lh2;
+                        outline: 4px solid #5d8378;
+                        border-radius: 10%;
+                        text-align: center;
+                        width: 15%;
+                        font-weight: 700;
+                        cursor: pointer;
+                        color: #6f9a8e;
+                        right: 34%;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        &:hover{
+                            color: #263d37;
+                            outline: 4px solid #263d37;
+                            font-size: #{'min(1.8em,18px)'};
+                        }
+                    }
                 }
             }
             .mainBtm{
@@ -1059,6 +1160,8 @@ html{
             .info{
                 margin-top: $lh3;
                 .image{
+                    @include ptbg;
+                    background-image: url('../images/programming/kakao.png');
                     outline: 1px solid ;
                     width: calc(100% / 21 * 4);
                     height: #{'min(9rem,360px)'};
@@ -1106,8 +1209,8 @@ html{
                         right: 0;
                         margin: auto;
                         animation-name: 'talk';
-                        animation-delay: 1s;
                         animation-duration: 2s;
+                        animation-iteration-count: infinite;
                     }
                     &.i1:hover::after{
                         @include ptbtn;
@@ -1202,7 +1305,10 @@ html{
     0%{
         opacity: 0;
     }
-    100%{
+    50%{
         opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

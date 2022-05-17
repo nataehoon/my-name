@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/myname_pc.min.css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/myname_pc.js"></script>
 </head>
@@ -31,7 +31,7 @@
         <div class="main main01">
             <div class="mainTop">
                 <div class="first">
-                    <div class="logo" data-img="url"></div>
+                    <div class="logo"></div>
                 </div>
                 <div class="second">
                     <div class="cloud">
@@ -126,49 +126,55 @@
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>80</span>lv</h5>
+                                <h5><span data-num="80">80</span>lv</h5>
                             </div>
                             <div class="txtGroup">
                                 <h3>java script</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>50</span>lv</h5>
+                                <h5><span data-num="50">50</span>lv</h5>
                             </div>
                             <div class="txtGroup">
                                 <h3>css▪scss</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>80</span>lv</h5>
+                                <h5><span data-num="80">80</span>lv</h5>
                             </div>
                             <div class="txtGroup">
                                 <h3>jquery</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>60</span>lv</h5>
+                                <h5><span data-num="60">60</span>lv</h5>
                             </div>
                             <div class="txtGroup">
                                 <h3>photoshop</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>50</span>lv</h5>
+                                <h5><span data-num="50">50</span>lv</h5>
                             </div>
                             <div class="txtGroup">
                                 <h3>illustrator</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
-                                <h5><span>50</span>lv</h5>
+                                <h5><span data-num="50">50</span>lv</h5>
                             </div>
-                            <div class="txtGroup">
+                            <!-- <div class="txtGroup">
                                 <h3>vue</h3>
                                 <div class="image">
                                     <div class="per"></div>
                                 </div>
                                 <h5><span>10</span>lv</h5>
+                            </div> -->
+                            <div class="alert">
+                                <div class="image" data-img0 ="url('./images/programming/btn01.gif')"  data-img1="url('./images/programming/btn02.gif')" data-img2="url('./images/programming/btn03.gif')" data-img3="url('./images/programming/btn04.gif')" data-img4="url('./images/programming/btn05.gif')" data-img5="url('./images/programming/btn06.gif')" data-img6="url('./images/programming/btn07.gif')"></div>
+                                <div class="txt">
+                                    <p>웹 표준을 준수하고 일관성 있는 문서작업을 합니다.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="btn">
@@ -196,7 +202,7 @@
                                 <div class="infLeft">
                                     <h3>name</h3>
                                     <div class="image">
-                                        <span>나현지</span>
+                                        <span>나</span><span>현</span><span>지</span><i></i>
                                     </div>
                                 </div>
                                 <div class="infright">
@@ -218,16 +224,15 @@
                             <div class="info">
                                 <h3>education</h3>
                                 <div class="image">
-                                    <span>인천재능대학교(실용음악과)</span>
-                                    <span>그린컴퓨터아카데미 퍼블리셔 수료</span>
+                                    <span>인천재능대학교(실용음악과), 그린컴퓨터아카데미 퍼블리셔 수료</span>
                                 </div>
                             </div>                        
                         </div>
                     </div>
                     <div class="menuBtm">
                         <div class="shadow">
-                            <p>성실하고 열심히하는 캐릭터로 시간에따라 <br>어쩌구저쩌구를 하는데 저쩌구 저쩌구를 함
-                            증말 신이나고 어쩌구 저쩌구 신나게 일하는 어쩌구 저쩌구 <br>증말 하기 싫은 포폴이지만 어쩌구저쩌구</p>
+                            <p>책임감 있고 성실한 캐릭터 <br>시간이 지날수록 일의 능률이 올라가며 스킬레벨이 1씩 오릅니다.
+                            플레이어 주위 지름 30 범위의 분위기를 밝게하며, 세레나데 스킬로 파티원들의 mp회복력이 상승됩니다. 스트레스에게 둔화 효과를 받지 않습니다. <br></p>
                         </div>
                     </div>
                 </div>
@@ -254,16 +259,16 @@
             </div>
             <div class="gameRight">
                 <div class="imageGroup ig1">
-                    <div class="image i1"></div>
-                    <div class="btn"></div>
+                    <div class="image i1" data-img ="url(./images/page/page01.png)"></div>
+                    <div class="btn">more</div>
                 </div>
                 <div class="imageGroup ig2">
-                    <div class="image i2"></div>
-                    <div class="btn"></div>
+                    <div class="image i2" data-img ="url(./images/page/page02.png)"></div>
+                    <div class="btn">more</div>
                 </div>
                 <div class="imageGroup ig3">
-                    <div class="image i3"></div>
-                    <div class="btn"></div>
+                    <div class="image i3" data-img ="url(./images/page/page03.png)"></div>
+                    <div class="btn">more</div>
                 </div>
             </div>
             <div class="mainBtm">

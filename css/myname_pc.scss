@@ -1065,7 +1065,6 @@ html{
                 bottom: #{'min(6rem,240px)'};
                 z-index: 2;
                 min-width: 450px;
-                outline: 1px solid #000;
                 .gameimage{
                     @include ptbtn;
                     background-image: url('../images/main1/bmo.png');

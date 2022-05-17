@@ -15,7 +15,7 @@ $(function(){
     var up = $('.mainWrap .main.main04 .infofir .btn');
     var uptxt = $('.mainWrap .main.main04 .btn h4');
     var chip = $('.mainWrap.mainWrap05 .main.main05 .gameRight .image');
-    var gamema = $('.mainWrap.mainWrap05 .main.main05 .gameLeft .image');
+    var gamema = $('.mainWrap.mainWrap05 .main.main05 .gameLeft .gameview');
     var logo = $('.logo');
     var atr = 0, curind =0, tyt =0, drop =0;
     var posX = 0 , posY = 0;
@@ -162,12 +162,19 @@ $(function(){
         revert:true,
         drag:function(){
             drop = $(this).attr('data-img');
+            gamema.css({
+                animationName:'none',
+            });
         }
     });
 
     gamema.droppable({
         drop:function(){
-            gamema.css({backgroundImage:drop})
+            gamema.css({
+                backgroundImage:drop,
+                animationName:'imgtb',
+                animationDuration:'10s'
+            });
         }
     })
 

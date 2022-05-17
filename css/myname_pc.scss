@@ -59,6 +59,7 @@ html{
     z-index: 5;
     opacity: 1;
     transition: opacity 0.5s;
+    color: transparent;
 }
 .gameleft{
     position: fixed;
@@ -69,6 +70,7 @@ html{
     z-index: 5;
     opacity: 1;
     transition: opacity 0.5s;
+    color: transparent;
 }
 .gameright{
     position: fixed;
@@ -79,6 +81,7 @@ html{
     z-index: 5;
     opacity: 1;
     transition: opacity 0.5s;
+    color: transparent;
 }
 .gamebottom{
     position: relative;
@@ -90,6 +93,7 @@ html{
     width: 100%;
     opacity: 1;
     transition: opacity 0.5s;
+    color: transparent;
     .btn{
         position: relative;
         position: absolute;
@@ -113,6 +117,7 @@ html{
             bottom: #{'min(-3.8rem,152px)'};
             height: #{'min(3.5rem,140px)'};
             .image{
+                color: transparent;
                 @include ptbtn;
                 @for $i from 1 through 3{
                     &.i#{$i}{
@@ -168,6 +173,7 @@ html{
             left: 0;
             z-index: 4;
             opacity: 0;
+            color: transparent;
         }
         .mainleft{
             position: absolute;
@@ -178,6 +184,7 @@ html{
             z-index: 4;
             top: 0;
             opacity: 0;
+            color: transparent;
         }
         .mainright{
             position: absolute;
@@ -188,6 +195,7 @@ html{
             z-index: 4;
             top: 0;
             opacity: 0;
+            color: transparent;
         }
         .mainbottom{
             position: relative;
@@ -198,6 +206,7 @@ html{
             bottom: 0;
             width: 100%;
             opacity: 0;
+            color: transparent;
             .btnLeft{
                 @include ptbtn;
                 width: calc(100% / 21 * 1.5);
@@ -223,6 +232,7 @@ html{
                             background-image: url('../images/game/gamebutton#{$i}.png');
                         }
                     }
+                    color: transparent;
                     position: absolute;
                     width: 100%;
                     &.i1{
@@ -257,6 +267,7 @@ html{
             .first{
                 position: relative;
                 height: 20vh;
+                color: transparent;
                 .logo{
                     position: absolute;
                     cursor: pointer;
@@ -266,6 +277,7 @@ html{
                     height: $lh4;
                     top: #{'min(1.5rem,60px)'};
                     left: 4%;
+                    color: transparent;
                     &:hover{
                         background-image: url('../images/main1/logo\ md\ 2.gif');
                     }
@@ -278,6 +290,7 @@ html{
                     @include flex;
                     position: absolute;
                     width: 100%;
+                    color: transparent;
                     .image{
                         @for $i from 1 through 2{
                             @include ptbtn;
@@ -337,6 +350,7 @@ html{
                         @include ptbtn;
                         position: absolute;
                         background-image: url('../images/main1/flymd.png');
+                        color: transparent;
                         width: calc(100% / 12 * 2.5);
                         height: #{'min(4rem,160px)'};
                         right: 5%;
@@ -362,6 +376,7 @@ html{
                 width: 75%;
                 height: #{'min(6rem,240px)'};
                 height: #{'min(7rem,280px)'};
+                color: transparent;
                 .image{
                     @include ptbtn;
                     background-image: url('../images/main1/flowermd.png');
@@ -388,6 +403,7 @@ html{
                 position: absolute;
                 width: 25%;
                 right: 0;
+                color: transparent;
                 .image{
                     @include ptbtn;
                     @for $i from 1 through 2{
@@ -427,6 +443,7 @@ html{
                 height: #{'min(7rem,280px)'};
                 background-color: green;
                 bottom: 0;
+                color: transparent;
             }
         }
         &.main02{
@@ -478,6 +495,7 @@ html{
                             z-index: 1;
                             width: 20%;
                             height: $lh4;
+                            color: transparent;
                             &.i1{
                                 bottom: #{'min(-1rem,-40px)'};
                                 left: 10%;
@@ -557,6 +575,7 @@ html{
                             margin-top: $lh2;
                             background-image: url('../images/main1/bgcbig.gif');
                             padding-top: 50px;
+                            color: transparent;
                             .image{
                                 @include ptbtn;
                                 background-image: url('../images/main1/main_me.gif');
@@ -598,6 +617,7 @@ html{
                                         &.i#{$i}{
                                             background-image: url('../images/main1/bottom#{$i}.gif');
                                         }
+                                        color: transparent;
                                     }
                                     position: relative;
                                     width: calc(50% - 10px);
@@ -662,6 +682,7 @@ html{
                                         bottom: 0;
                                         border-radius: 5px;
                                         left: 5%;
+                                        color: transparent;
                                     }
                                 }
                                 h5{
@@ -705,6 +726,7 @@ html{
                                     height: #{'min(2.5rem,100px)'};
                                     margin-top: #{'min(0.5rem,20px)'};
                                     background-image: url('../images/programming/btn01.gif');
+                                    color: transparent;
                                 }
                                 .txt{
                                     width: calc(100% / 6 * 4);
@@ -752,6 +774,7 @@ html{
                                 margin-bottom: $lh;
                                 position: relative;
                                 cursor: pointer;
+                                color: transparent;
                             }
                         }
                     }
@@ -794,7 +817,7 @@ html{
                                     width: 70%;
                                     height: #{'min(6rem,240px)'};
                                     margin: 0 auto;
-
+                                    color: transparent;
                                 }
                             }
                         }
@@ -1026,36 +1049,47 @@ html{
                 height: $lh4;
                 top: #{'min(1.5rem,60px)'};
                 left: 4%;
+                z-index: 2;
+                color: transparent;
                 cursor: pointer;
                 &:hover{
                     background-image: url('../images/main1/logo\ big\ 2.gif');
                 }
             }
             .gameLeft{
-                @include ptbtn;
-                background-image: url('../images/main1/bmo.png');
                 height: #{'min(17rem,680px)'};
                 position: relative;
                 position: absolute;
-                z-index: 1;
-                left: 17%;
+                width: calc(100% / 21 * 5.8);
+                left: 22%;
                 bottom: #{'min(6rem,240px)'};
-                width: calc(100% / 21 * 9);
-                .image{
+                z-index: 2;
+                overflow: hidden;
+                .gameimage{
+                    @include ptbtn;
+                    background-image: url('../images/main1/bmo.png');
+                    position: relative;
+                    z-index: 1;
+                    height: #{'min(17rem,680px)'};
+                    width: 100%;
+                    color: transparent;
+                }
+                .gameview{
                     @include ptbg;
-                    margin-left: auto;
-                    margin-right: 22.8%;
-                    width: 41%;
+                    background-image: url('../images/programming/loading.jpg');
+                    background-position: top;
+                    position: absolute;
+                    width: 70%;
                     background-color: #000;
                     height: #{'min(10rem,400px)'};
-                    margin-top: #{'min(1.6rem,64px)'};
-                    border-radius: 14%;
-                    background-image: url('../images/programming/loading.jpg');
+                    right: 5%;
+                    top: #{'min(1.5rem,60px)'};
+                    color: transparent;
                 }
             }
             .gameRight{
                 position: absolute;
-                top: $lh3;
+                top: $lh4;
                 right: 0;
                 width: calc(100% / 21 * 8);
                 z-index: 3;
@@ -1069,6 +1103,7 @@ html{
                                 background-image: url('../images/main1/chip#{$i}.png');
                             }
                         }
+                        color: transparent;
                         width: calc(100% / 5 * 2.5);
                         height: #{'min(5.5rem,220px)'};
                         cursor: pointer;
@@ -1096,6 +1131,14 @@ html{
                             color: #263d37;
                             outline: 4px solid #263d37;
                             font-size: #{'min(1.8em,18px)'};
+                        }
+                        &::selection{
+                            color: #fa096d;
+                            background-color: transparent;
+                        }
+                        &::-moz-selection{
+                            color: #fa096d;
+                            background-color: transparent;
                         }
                     }
                 }
@@ -1136,6 +1179,7 @@ html{
                 width: calc(100% / 19 * 1.5);
                 height: $lh4;
                 cursor: pointer;
+                color: transparent;
                 &:hover{
                     background-image: url('../images/main1/logo\ big\ 2.gif');
                 }
@@ -1166,19 +1210,28 @@ html{
                     width: calc(100% / 21 * 4);
                     height: #{'min(9rem,360px)'};
                     margin: 0 auto;
+                    color: transparent;
                 }
                 .btn{
                     margin-top: $lh2;
                     font-size: #{'min(3em,30px)'};
                     text-align: center;
                     cursor: pointer;
-                    &::selection{
-                        color: #52734d;
-                        background-color: transparent;
+                    text-transform: capitalize;
+                    position: relative;
+                    &:hover::after{
+                        opacity: 0.7;
                     }
-                    &::-moz-selection{
-                        color: #52734d;
-                        background-color: transparent;
+                    &::after{
+                        @include ptbtn;
+                        background-image: url('../images/programming/pink2.png');
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: $lh2;
+                        position: absolute;
+                        bottom: 0.3rem;
+                        opacity: 0;
                     }
                 }
             }
@@ -1188,6 +1241,7 @@ html{
                 width: calc(100% / 21 * 3.5);
                 bottom: $lh;
                 right: 3%;
+                color: transparent;
                 .image{
                     @include ptbtn;
                     @for $i from 1 through 2{
@@ -1310,5 +1364,16 @@ html{
     }
     100%{
         opacity: 0;
+    }
+}
+@keyframes imgtb{
+    0%{
+        background-position: top;
+    }
+    50%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: top;
     }
 }

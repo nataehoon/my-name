@@ -42,8 +42,8 @@ html{
         font-size: 1vh;
         font-family: 'tardust';
         position: relative;
-        overflow-y: hidden;
-        overflow-x: hidden;
+        // overflow-y: hidden;
+        // overflow-x: hidden;
     }
 }
 
@@ -1064,7 +1064,8 @@ html{
                 left: 22%;
                 bottom: #{'min(6rem,240px)'};
                 z-index: 2;
-                overflow: hidden;
+                min-width: 450px;
+                outline: 1px solid #000;
                 .gameimage{
                     @include ptbtn;
                     background-image: url('../images/main1/bmo.png');
@@ -1073,6 +1074,7 @@ html{
                     height: #{'min(17rem,680px)'};
                     width: 100%;
                     color: transparent;
+                    min-width: 500px;
                 }
                 .gameview{
                     @include ptbg;

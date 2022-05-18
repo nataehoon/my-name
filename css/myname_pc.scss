@@ -42,8 +42,8 @@ html{
         font-size: 1vh;
         font-family: 'tardust';
         position: relative;
-        // overflow-y: hidden;
-        // overflow-x: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -1109,37 +1109,67 @@ html{
                         height: #{'min(5.5rem,220px)'};
                         cursor: pointer;
                         background-image: url(../images/page/page01.png);
+                        &:hover + .drag{
+                            opacity: 1;
+                        }
                     }
-                    .btn{
-                        box-shadow: -6px 2.5px 1px rgb(124, 124, 124);
-                        position: absolute;
-                        font-size: #{'min(1.5em,15px)'};
-                        text-transform: capitalize;
-                        line-height: $lh2;
-                        height: $lh2;
-                        outline: 4px solid #5d8378;
-                        border-radius: 10%;
+                    .drag{
+                        font-size: #{'min(1.8em,18px)'};
+                        line-height: $lh;
+                        border: 3px solid #fff;
+                        background: rgba(253,253,253,0.6);
+                        border-radius: 20%;
                         text-align: center;
-                        width: 15%;
-                        font-weight: 700;
-                        cursor: pointer;
-                        color: #6f9a8e;
-                        right: 34%;
-                        top: 0;
-                        bottom: 0;
+                        width: 30%;
+                        position: absolute;
+                        color: #666;
+                        left: -5%;
                         margin: auto;
-                        &:hover{
-                            color: #263d37;
-                            outline: 4px solid #263d37;
-                            font-size: #{'min(1.8em,18px)'};
-                        }
-                        &::selection{
-                            color: #fa096d;
-                            background-color: transparent;
-                        }
-                        &::-moz-selection{
-                            color: #fa096d;
-                            background-color: transparent;
+                        z-index: 3;
+                        top: #{'min(3.5rem,140px)'};
+                        height: $lh3;
+                        padding-top: #{'min(0.2rem,8px)'};
+                        overflow: hidden;
+                        opacity: 0;
+                        text-transform: capitalize;
+                    }
+                    .btns{
+                        position: absolute;
+                        right: 34%;
+                        top: $lh;
+                        bottom: 0;
+                        width: 15%;
+                        margin: auto;
+                        height: $lh4;
+                        .btn{
+                            box-shadow: -6px 2.5px 1px rgb(124, 124, 124);
+                            border-radius: 10%;
+                            line-height: $lh2;
+                            text-align: center;
+                            height: $lh2;
+                            font-weight: 700;
+                            cursor: pointer;
+                            color: #6f9a8e;
+                            font-size: #{'min(1.5em,15px)'};
+                            text-transform: capitalize;
+                            outline: 4px solid #5d8378;
+                            text-transform: uppercase;
+                            &:nth-child(2){
+                                margin-top: $lh;
+                            }
+                            &:hover{
+                                color: #263d37;
+                                outline: 4px solid #263d37;
+                                font-size: #{'min(1.8em,18px)'};
+                            }
+                            &::selection{
+                                color: #fa096d;
+                                background-color: transparent;
+                            }
+                            &::-moz-selection{
+                                color: #fa096d;
+                                background-color: transparent;
+                            }
                         }
                     }
                 }
@@ -1233,6 +1263,16 @@ html{
                         position: absolute;
                         bottom: 0.3rem;
                         opacity: 0;
+                    }
+                    a{
+                        &::selection{
+                            color: #fa096d;
+                            background-color: transparent;
+                        }
+                        &::-moz-selection{
+                            color: #fa096d;
+                            background-color: transparent;
+                        }
                     }
                 }
             }
